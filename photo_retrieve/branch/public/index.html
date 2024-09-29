@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form onsubmit="return getStudentDetails()" class="form-inline">
+    <div class="form-group">
+      <label for="academicYear" class="mr-2">Academic Year:</label>
+      <select id="academicYear" class="form-control mr-2">
+        <option value="all">All</option>
+        <option value="2020-2024">2020-2024</option>
+        <option value="2021-2025">2021-2025</option>
+        <option value="2022-2026">2022-2026</option>
+        <option value="2023-2027">2023-2027</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="department" class="mr-2">Department:</label>
+      <select id="department" class="form-control mr-2">
+        <option value="all">All</option>
+        <option value="CSD">CSE (DS)</option>
+        <option value="CSM">CSE (AIML)</option>
+        <option value="cse">CSE</option>
+        <option value="mechanical">Mechanical</option>
+        <option value="it">IT</option>
+        <option value="eee">EEE</option>
+        <option value="ece">ECE</option>
+        <option value="civil">Civil</option>
+      </select>
+    </div>
+    <button id="departmentSearch" class="btn btn-secondary">Search by Department</button>
+  </form>
+
+  <table id="studentData">
+    <!-- Details will be dynamically generated here -->
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
